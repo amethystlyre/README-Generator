@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (!license) { return 'NA'; }
+  if (!license) { return ''; }
   else {
     let badge = renderLicenseBadge(license);
     let link = renderLicenseLink(license);
@@ -69,7 +69,7 @@ ${description}
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
-- [Questions for author](#questions-for-author)
+- [Questions](#questions)
     
 ## Installation
     
