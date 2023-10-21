@@ -43,8 +43,8 @@ function renderLicenseSection(license) {
   else {
     let badge = renderLicenseBadge(license);
     return `## License
-    ${badge}<br>
-    This project is licensed under the ${license} License - see the [LICENSE.md](license) file for details`
+${badge}<br>
+This project is licensed under the ${license} License - see the [LICENSE.md](license) file for details`
   }
 }
 
