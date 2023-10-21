@@ -37,7 +37,7 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is the project license?',
+        message: 'What license is this project distributed under?',
         name: 'license',
     },
     {
