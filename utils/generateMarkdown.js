@@ -1,8 +1,32 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (!license) { return ''; }
-  else { return `![Badge](https://img.shields.io/badge/License-${license}-brightgreen)` }
+
+  switch(license){
+    case 'MIT':
+      return `![Badge](https://img.shields.io/badge/License-MIT-yellow)`;
+      break;
+    
+    case 'Apache 2.0':
+      return `![Badge](https://img.shields.io/badge/License-Apache_2.0-green)`;
+      break;
+
+    case 'GNU General Public':
+      return `![Badge](https://img.shields.io/badge/License-GPL_v3-blue)`;
+      break;
+
+    case 'GNU Lesser General Public':
+      return `![Badge](https://img.shields.io/badge/License-LGPL_v3-blue)`;
+      break;
+
+    case 'Mozilla Public License':
+      return `![Badge](https://img.shields.io/badge/License-MPL_2.0-brightgreen)`;
+      break;
+
+    default:
+      return '';
+    }
+
 }
 
 // TODO: Create a function that returns the license link
@@ -19,14 +43,14 @@ function renderLicenseSection(license) {
   else {
     let badge = renderLicenseBadge(license);
     let link = renderLicenseLink(license);
-    return `${badge}
+    return `${badge}<br>
     This project is licensed under the ${license} License - see the ${link} file for details`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const { title, description, install, usage, credits, license, contributing, testMethods, queryAuthor } = data;
+  const { title, description, install, usage, credits, license, contributing, testMethods, authorGit, authorEmail} = data;
   escapeChar(data);
   let badge = renderLicenseBadge(license);
   let licenseSection = renderLicenseSection(license);
@@ -53,8 +77,8 @@ ${install}
     
 ## Usage
     
-${usage}
-Sample link format for adding screenshots saved in assets/images folder to README.
+${usage}<br>
+Sample link format for adding screenshots saved in assets/images folder to README.<br>
 ![alt text](assets/images/screenshot.png)
     
 ## Credits
@@ -73,9 +97,9 @@ ${contributing}
     
 ${testMethods}
     
-## Questions for author
-    
-${queryAuthor}
+## Questions
+Repository contact: @${authorGit} <br>
+If you have any questions or issues relating to this project, you can also contact the owner via ${authorEmail}.
 `;
 }
 

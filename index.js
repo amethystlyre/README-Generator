@@ -36,9 +36,10 @@ const questions = [
         default: 'N/A'
     },
     {
-        type: 'input',
+        type: 'list',
         message: 'What license is this project distributed under?',
         name: 'license',
+        choices:['MIT','Apache 2.0','GNU General Public','GNU Lesser General Public', 'Mozilla Public License']
     },
     {
         type: 'input',
@@ -54,9 +55,13 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide users with instructions on how to raise queries and issues.',
-        name: 'queryAuthor',
-        default: 'If you have any questions for the author, please create a New Issue in this project repository.'
+        message: 'Provide author Github account for contact.',
+        name: 'authorGit',
+    },
+    {
+        type: 'input',
+        message: 'Provide author email address for contact.',
+        name: 'authorEmail',
     },
 
 ];
