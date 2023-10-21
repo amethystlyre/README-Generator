@@ -27,8 +27,9 @@ This tool was designed to help developers to quickly and easily generate a READM
 ## Usage
     
 In your command-line terminal, start the application with `node index.js`. Follow the prompts to answer each question. The responses provided by the user will be recorded and saved in a README.md file that is located under the "generated_files" subfolder. For more detailed instructions, please watch the walkthrough video linked below.<br>
-Sample link format for adding screenshots saved in assets/images folder to README.<br>
-![alt text](assets/images/screenshot.png)
+
+Sample link format for adding screenshots to README later:
+`![alt text](assets/images/screenshot.png)`
     
 ## Credits
     

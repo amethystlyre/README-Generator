@@ -79,8 +79,8 @@ ${install}
 ## Usage
     
 ${usage}<br>
-Sample link format for adding screenshots saved in assets/images folder to README.<br>
-![alt text](assets/images/screenshot.png)
+  Sample link format for adding screenshots to README later.<br>
+  ![alt text](assets/images/screenshot.png)
     
 ## Credits
     
