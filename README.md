@@ -17,16 +17,17 @@ This tool was designed to help developers to quickly and easily generate a READM
     
 ## Installation
     
-1.Clone this Git repo to your local directory.
-2.Open the repo folder in VS Studio or your preferred code editor.
-3.Open index.js in Integrated Terminal and enter command `npm install` to download the required Inquirer package.
-    
+1.Clone this Git repo to your local directory.<br>
+![screenshot](./assets/images/Screenshot.png)<br>
+2.Open the repo folder in VS Studio or your preferred code editor.<br>
+3.Open the Integrated Terminal and enter command `npm install` to download the required Inquirer package.<br>
+![screenshot](./assets/images/Screenshot2.png)
+
 ## Usage
     
-Once the dependencies have been installed, you can innvoke the application with command `node index.js` in the terminal. Follow the prompts to answer each question. The responses provided by the user will be recorded and saved in a README(project title).md file that is located under the "generated_files" subfolder. For more detailed instructions, please watch the walkthrough video linked below.<br>
+Once the dependencies have been installed, you can innvoke the application with command `node index.js` in the terminal. Follow the prompts to answer each question. The responses provided by the user will be recorded and saved into a README(project title).md file, located under the "generated_files" directory. For more detailed instructions, please watch the [walkthrough video](https://drive.google.com/file/d/136NRMjKFm9Y9jTo3piOK7BpPluPT9VCT/view?usp=sharing).<br>
 
-Walkthrough Video:
-[Video link]()
+![screenshot](./assets/images/Screenshot3.png)
     
 ## Credits
     
