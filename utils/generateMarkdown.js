@@ -42,9 +42,9 @@ function renderLicenseSection(license) {
   if (!license) { return ''; }
   else {
     let badge = renderLicenseBadge(license);
-    return `## License
+    return `## License<br>
 ${badge}<br>
-This project is licensed under the ${license} License - see the [LICENSE.md](license) file for details`
+This project is licensed under the ${license} License - see the [LICENSE.md](license) file for details<br>`
   }
 }
 
@@ -79,8 +79,8 @@ ${install}
 ## Usage
     
 ${usage}<br>
-  Sample link format for adding screenshots to README later.<br>
-  ![alt text](assets/images/screenshot.png)
+Sample link format for adding screenshots to README later.<br>
+\`![alt text](assets/images/screenshot.png)\`
     
 ## Credits
     
