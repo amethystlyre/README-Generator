@@ -97,8 +97,9 @@ ${contributing}
 ${testMethods}
     
 ## Questions
-Repository contact: @${authorGit} <br>
-If you have any questions or issues relating to this project, you can also contact the owner via ${authorEmail}.
+Repository contact: [@${authorGit}](https://github.com/${authorGit}) <br>
+If you have any questions or issues relating to this project, you can raise it in a New Issue and tag the repo owner.<br>
+Alternatively you can also contact the owner via [email](${authorEmail}).
 `;
 }
 

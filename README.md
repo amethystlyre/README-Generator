@@ -43,5 +43,6 @@ Feel free to contribute your ideas or bug fixes for this project by raising a ne
 N/A
     
 ## Questions
-Repository contact: @amethystlyre <br>
-If you have any questions or issues relating to this project, you can also contact the owner via test@example.com.
+Repository contact: [@amethystlyre](https://github.com/amethystlyre) <br>
+If you have any questions or issues relating to this project, you can raise it in a New Issue and tag the repo owner.<br>
+Alternatively you can also contact the owner via [email](test@example.com).
