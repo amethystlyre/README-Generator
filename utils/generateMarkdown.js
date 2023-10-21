@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
 
-  switch(license){
+  switch (license) {
     case 'MIT':
       return `![Badge](https://img.shields.io/badge/License-MIT-yellow)`;
       break;
-    
+
     case 'Apache 2.0':
       return `![Badge](https://img.shields.io/badge/License-Apache_2.0-green)`;
       break;
@@ -25,7 +25,7 @@ function renderLicenseBadge(license) {
 
     default:
       return '';
-    }
+  }
 
 }
 
@@ -33,7 +33,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (!license) { return ''; }
-  else { return `[LICENSE.md](license)` }
+  else { return '[License](#license)'; }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -42,20 +42,21 @@ function renderLicenseSection(license) {
   if (!license) { return ''; }
   else {
     let badge = renderLicenseBadge(license);
-    let link = renderLicenseLink(license);
-    return `${badge}<br>
-    This project is licensed under the ${license} License - see the ${link} file for details`
+    return `## License
+    ${badge}<br>
+    This project is licensed under the ${license} License - see the [LICENSE.md](license) file for details`
   }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const { title, description, install, usage, credits, license, contributing, testMethods, authorGit, authorEmail} = data;
+  const { title, description, install, usage, credits, license, contributing, testMethods, authorGit, authorEmail } = data;
   escapeChar(data);
-  let badge = renderLicenseBadge(license);
+  let licBadge = renderLicenseBadge(license);
+  let licLink = renderLicenseLink(license);
   let licenseSection = renderLicenseSection(license);
   return `# ${title}
-${badge}
+${licBadge}
     
 ## Description
     
@@ -66,7 +67,7 @@ ${description}
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
-- [License](#license)
+- ${licLink}
 - [How to Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
@@ -85,8 +86,6 @@ Sample link format for adding screenshots saved in assets/images folder to READM
     
 ${credits}
 
-    
-## License
 ${licenseSection}    
  
 ## How to Contribute
@@ -107,7 +106,7 @@ If you have any questions or issues relating to this project, you can also conta
 function escapeChar(data) {
   for (let response of Object.keys(data)) {
     if (data[response].includes("`")) {
-      data[response] = data[response].replaceAll("`","\\\`"); 
+      data[response] = data[response].replaceAll("`", "\\\`");
     }
   }
   return data;
