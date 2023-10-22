@@ -25,7 +25,7 @@ This tool was designed to help developers to quickly and easily generate a READM
 
 ## Usage
     
-Once the dependencies have been installed, you can innvoke the application with command `node index.js` in the terminal. Follow the prompts to answer each question. The responses provided by the user will be recorded and saved into a README(project title).md file, located under the "generated_files" directory. For more detailed instructions, please watch the [walkthrough video](https://drive.google.com/file/d/136NRMjKFm9Y9jTo3piOK7BpPluPT9VCT/view?usp=sharing).<br>
+Once the dependencies have been installed, you can invoke the application with command `node index.js` in the terminal. Follow the prompts to answer each question. The responses provided by the user will be recorded and saved into a README(project title).md file, located under the "generated_files" directory. For more detailed instructions, please watch the [walkthrough video](https://drive.google.com/file/d/136NRMjKFm9Y9jTo3piOK7BpPluPT9VCT/view?usp=sharing).<br>
 
 ![screenshot](./assets/images/Screenshot3.png)
     
