@@ -114,4 +114,4 @@ function escapeChar(data) {
 }
 
 
-module.exports = { generateMarkdown }
+module.exports.generateMarkdown = generateMarkdown ;
